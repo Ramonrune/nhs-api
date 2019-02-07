@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.healthsystem.dao.AuditTrailDAO" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/dao/AuditTrailDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="106" x="1733" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.healthsystem.dao.ErrorLogDAO" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/dao/ErrorLogDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="106" x="1545" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.healthsystem.dao.PatientDAO" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/dao/PatientDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="106" x="1807" y="130"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.healthsystem.database.DatabaseConnectionFactory" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/database/DatabaseConnectionFactory.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="184" x="1693" y="316"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.healthsystem.resource.PatientResource" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/resource/PatientResource.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="127" x="1934" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <annotation id="6" language="java" name="com.healthsystem.filter.JWTTokenNeeded" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/filter/JWTTokenNeeded.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="127" x="253" y="130"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </annotation>  
+  <class id="7" language="java" name="com.healthsystem.filter.JWTTokenNeededFilter" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/filter/JWTTokenNeededFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="155" x="404" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.healthsystem.model.AuditTrailModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/AuditTrailModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="116" x="1917" y="316"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.healthsystem.model.PhysicianWorksOnHealthInstitutionModel" 
+    project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/PhysicianWorksOnHealthInstitutionModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="259" x="2056" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.healthsystem.model.MessageAuthModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/MessageAuthModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="136" x="42" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.healthsystem.model.DiagnosisModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/DiagnosisModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="116" x="2355" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.healthsystem.model.MedicineModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/MedicineModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="116" x="2511" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.healthsystem.model.ErrorLogModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/ErrorLogModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="116" x="1537" y="316"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.healthsystem.model.HistoryModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/HistoryModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="116" x="3407" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.healthsystem.model.MessageModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/MessageModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="116" x="420" y="130"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.healthsystem.model.PatientTagModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/PatientTagModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="118" x="3249" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.healthsystem.model.DeficiencyModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/DeficiencyModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="117" x="3092" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.healthsystem.model.DiagnosisProcedureModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/DiagnosisProcedureModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="174" x="1331" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.healthsystem.model.PatientHasDeficiencyModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/PatientHasDeficiencyModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="179" x="2873" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.healthsystem.model.DiseaseModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/DiseaseModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="116" x="612" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.healthsystem.model.PatientModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/PatientModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="116" x="1900" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.healthsystem.model.ExamModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/ExamModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="116" x="979" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="com.healthsystem.model.ExamAttachmentModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/ExamAttachmentModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="156" x="1135" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="com.healthsystem.model.UserModel.UserModelBuilder" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/UserModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="125" x="218" y="409"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="com.healthsystem.model.MessageListModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/MessageListModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="152" x="420" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="com.healthsystem.model.MessageNewUserModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/MessageNewUserModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="162" x="218" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="com.healthsystem.model.GraphModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/GraphModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="116" x="1381" y="316"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="com.healthsystem.model.PatientUseMedicineModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/PatientUseMedicineModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="171" x="768" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="com.healthsystem.model.ExamHistoryModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/ExamHistoryModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="130" x="234" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="com.healthsystem.model.PatientHasDiseaseModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/PatientHasDiseaseModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="166" x="2667" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="com.healthsystem.model.SpecializationModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/SpecializationModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="137" x="2073" y="316"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="com.healthsystem.model.UserModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/UserModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="116" x="218" y="316"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="com.healthsystem.model.NurseProcedureModel" project="HealthSystem" 
+    file="/HealthSystem/src/main/java/com/healthsystem/model/NurseProcedureModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="152" x="42" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <association id="34">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="35" name="auditTrailDAO"/>      
+      <multiplicity id="36" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="37">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <generalization id="38">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <dependency id="39">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="40">    
+    <bendpoint x="2004" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <association id="41">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="42" name="errorLogDAO"/>      
+      <multiplicity id="43" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="44">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="45" name="userModel"/>      
+      <multiplicity id="46" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="47">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="48">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="49">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="50">    
+    <bendpoint x="1186" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <dependency id="51">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="52">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="53">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="54" name="patientDAO"/>      
+      <multiplicity id="55" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="56">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <dependency id="57">    
+    <bendpoint x="1702" y="223"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="58">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="59">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="60">    
+    <bendpoint x="2413" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="61">    
+    <bendpoint x="1466" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="62">    
+    <bendpoint x="1943" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="63">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="64">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="65">    
+    <bendpoint x="1543" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="66">    
+    <bendpoint x="2153" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="67">    
+    <bendpoint x="1360" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <generalization id="68">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="69">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="70" name="specializationList"/>      
+      <multiplicity id="71" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="72">    
+    <bendpoint x="2231" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="73">    
+    <bendpoint x="1641" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="18"/>  
+  </dependency>  
+  <nesting id="74">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="24"/>  
+  </nesting>  
+  <dependency id="75">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="76">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="77">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="78">    
+    <bendpoint x="2679" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="79">    
+    <bendpoint x="1282" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="80">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="81">    
+    <bendpoint x="1869" y="223"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="82">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="83">    
+    <bendpoint x="1681" y="223"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="84">    
+    <bendpoint x="2522" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="85">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="86">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="87">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="18"/>  
+  </dependency>  
+  <dependency id="88">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="89">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="90">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="91">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="92">    
+    <bendpoint x="2309" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="93">    
+    <bendpoint x="2600" y="130"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="false" package="false" protected="false" private="false" static="false"/>    
+    <operations public="false" package="false" protected="false" private="false" static="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

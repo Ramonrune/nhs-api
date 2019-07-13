@@ -26,7 +26,7 @@ html, body {
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
 	
 	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvd3Lh7LOeEM7fM1chIR2C5GA2DKjC6_E&callback=initMap">
+		src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
 		
 	</script>	
 

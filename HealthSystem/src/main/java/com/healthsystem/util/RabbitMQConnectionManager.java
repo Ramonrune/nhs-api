@@ -28,7 +28,7 @@ public class RabbitMQConnectionManager {
 			throws IOException, TimeoutException, KeyManagementException, NoSuchAlgorithmException, URISyntaxException {
 
 		this.queueName = queueName;
-		String uri = "amqp://aovdehgg:qTbF0k3KF2O2GRn9WSOwcwlvaevLhkFJ@buffalo.rmq.cloudamqp.com/aovdehgg";
+		String uri = "";
 
 		factory = new ConnectionFactory();
 		factory.setUri(uri);

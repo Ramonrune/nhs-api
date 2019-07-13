@@ -27,7 +27,7 @@ public class Translate {
 		List<String> list = new ArrayList<>();
 		Client newClient = ClientBuilder.newClient();
 		Invocation invoke = newClient
-				.target("https://translation.googleapis.com/language/translate/v2?key=AIzaSyBvd3Lh7LOeEM7fM1chIR2C5GA2DKjC6_E")
+				.target("https://translation.googleapis.com/language/translate/v2?key=")
 				.request(MediaType.APPLICATION_JSON).buildPost(Entity.json(expression));
 		javax.ws.rs.core.Response response = invoke.invoke();
 

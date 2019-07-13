@@ -648,7 +648,7 @@ public class UserDAO {
 		props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 		Session session = Session.getInstance(props, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("nfcareone@gmail.com", "nfc_care_tcc");
+				return new PasswordAuthentication("nfcareone@gmail.com", "");
 			}
 		});
 		try {
@@ -713,7 +713,7 @@ public class UserDAO {
 		props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
 		Session session = Session.getInstance(props, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("nfcareone@gmail.com", "nfc_care_tcc");
+				return new PasswordAuthentication("nfcareone@gmail.com", "");
 			}
 		});
 		try {

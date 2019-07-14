@@ -33,8 +33,7 @@ Conclui-se que o sistema poderá auxiliar muito no ambiente da saúde, facilitan
 ##### Palavras Chave: Saúde; Sistema; Internacionalização; Prontuário Médico; NFC; Arduino; Android; Java
 
 ## Recursos e Ferramentas
-<p>&nbsp;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esta se&ccedil;&atilde;o contempla as ferramentas de programa&ccedil;&atilde;o e os conceitos necess&aacute;rios para o desenvolvimento do NFC Health System.</p>
+<p>Esta se&ccedil;&atilde;o contempla as ferramentas de programa&ccedil;&atilde;o e os conceitos necess&aacute;rios para o desenvolvimento do NFC Health System.</p>
 <ul>
 <li><strong>Android Studio</strong>: ambiente de desenvolvimento integrado (IDE) oficial para o desenvolvimento de aplicativos Android, baseado no InteliJ IDEA<a href="#_ftn1" name="_ftnref1">[1]</a>, que oferece um ambiente unificado para o desenvolvimento de aplicativos. No qual &eacute; poss&iacute;vel desenvolver, fazer debugs, testes e interfaces para smartphones e tablets Android e dispositivos Android Wear, Android TV e Android Auto (ANDROID, 2017).</li>
 <li><strong>Eclipse</strong>: &Eacute; uma plataforma aberta que facilita o processo de desenvolvimento, fornecendo ferramentas para codifica&ccedil;&atilde;o, constru&ccedil;&atilde;o, execu&ccedil;&atilde;o e <em>debug</em> de aplica&ccedil;&otilde;es (UMBC, 2008). Esta ferramenta suporta o desenvolvimento em diversas linguagens e foi utilizada para o desenvolvimento dos <em>webservices</em> do sistema.</li>

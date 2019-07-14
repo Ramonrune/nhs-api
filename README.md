@@ -65,6 +65,216 @@ Conclui-se que o sistema poderá auxiliar muito no ambiente da saúde, facilitan
 <p><a href="#_ftnref3" name="_ftn3">[3]</a> Centrais de armazenamento de dados</p>
 
 
+## API de usuários
+
+<p><a name="_Toc530233485"></a>Tabela - Recursos da <em>API</em> de usu&aacute;rio</p>
+<table>
+<tbody>
+<tr>
+<td colspan="4" width="604">
+<p><strong>Recursos disponibilizados pela <em>API</em> de usu&aacute;rios</strong></p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p><strong>Endere&ccedil;o</strong></p>
+</td>
+<td width="66">
+<p><strong>M&eacute;todo</strong></p>
+</td>
+<td width="61">
+<p><strong>Autentica&ccedil;&atilde;o</strong></p>
+</td>
+<td width="255">
+<p><strong>Descri&ccedil;&atilde;o</strong></p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p>/user</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="61">
+<p>Sim</p>
+</td>
+<td width="255">
+<p>Adiciona um usu&aacute;rio</p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p>/user/checkUserStatus</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="61">
+<p>N&atilde;o</p>
+</td>
+<td width="255">
+<p>Checa se um usu&aacute;rio j&aacute; est&aacute; cadastrado</p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p>/user</p>
+</td>
+<td width="66">
+<p>PUT</p>
+</td>
+<td width="61">
+<p>Sim</p>
+</td>
+<td width="255">
+<p>Atualiza um usu&aacute;rio</p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p>/user/updateUserType</p>
+</td>
+<td width="66">
+<p>PUT</p>
+</td>
+<td width="61">
+<p>Sim</p>
+</td>
+<td width="255">
+<p>Atualiza o tipo de usu&aacute;rio (ex: paciente passa a ser m&eacute;dico).</p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p>/user</p>
+</td>
+<td width="66">
+<p>DELETE</p>
+</td>
+<td width="61">
+<p>Sim</p>
+</td>
+<td width="255">
+<p>Exclui um usu&aacute;rio</p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p>/user/{idUser}</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="61">
+<p>Sim</p>
+</td>
+<td width="255">
+<p>Obt&eacute;m os dados do usu&aacute;rio</p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p>/user/secretCode</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="61">
+<p>Sim</p>
+</td>
+<td width="255">
+<p>Obt&eacute;m o c&oacute;digo secreto do usu&aacute;rio.</p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p>/user/search/{login}</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="61">
+<p>Sim</p>
+</td>
+<td width="255">
+<p>Obtem os dados do usu&aacute;rio a partir do login.</p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p>/user/auth</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="61">
+<p>N&atilde;o</p>
+</td>
+<td width="255">
+<p>Autentica o usu&aacute;rio em rela&ccedil;&atilde;o as apis que possuem autentica&ccedil;&atilde;o.</p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p>/user/healthinstitutionbind/{idUser}</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="61">
+<p>Sim</p>
+</td>
+<td width="255">
+<p>Obt&eacute;m as institui&ccedil;&otilde;es de sa&uacute;de que o usu&aacute;rio est&aacute; vinculado.</p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p>/user/sendPasswordMail</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="61">
+<p>Sim</p>
+</td>
+<td width="255">
+<p>Envia um e-mail com login e senha para o usu&aacute;rio rec&eacute;m-criado.</p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p>/user/uploadImage</p>
+</td>
+<td width="66">
+<p>PUT</p>
+</td>
+<td width="61">
+<p>Sim</p>
+</td>
+<td width="255">
+<p>Atualiza a imagem do usu&aacute;rio.</p>
+</td>
+</tr>
+<tr>
+<td width="222">
+<p>/user/image</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="61">
+<p>N&atilde;o</p>
+</td>
+<td width="255">
+<p>Obt&eacute;m a imagem do usu&aacute;rio.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fonte: Elaborado pelo autor</strong></p>
+
 ## Licença
 
     Copyright 2019 

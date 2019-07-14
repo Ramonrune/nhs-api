@@ -308,9 +308,7 @@ Conclui-se que o sistema poderá auxiliar muito no ambiente da saúde, facilitan
 
 
 ## API de Paciente
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><a name="_Toc530233487"></a>Tabela 33 - Recursos da <em>API</em> de paciente</p>
+<p><a name="_Toc530233487"></a>Tabela - Recursos da <em>API</em> de paciente</p>
 <table>
 <tbody>
 <tr>

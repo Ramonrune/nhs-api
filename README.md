@@ -32,8 +32,7 @@ Conclui-se que o sistema poderá auxiliar muito no ambiente da saúde, facilitan
 
 ##### Palavras Chave: Saúde; Sistema; Internacionalização; Prontuário Médico; NFC; Arduino; Android; Java
 
-<p>&nbsp;</p>
-<p><a name="_Toc530233617"></a><a name="_Toc483148352"></a>2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Recursos e Ferramentas</p>
+## Recursos e Ferramentas
 <p>&nbsp;</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esta se&ccedil;&atilde;o contempla as ferramentas de programa&ccedil;&atilde;o e os conceitos necess&aacute;rios para o desenvolvimento do NFC Health System.</p>
 <ul>

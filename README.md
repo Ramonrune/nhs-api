@@ -64,6 +64,73 @@ Conclui-se que o sistema poderá auxiliar muito no ambiente da saúde, facilitan
 <p><a href="#_ftnref3" name="_ftn3">[3]</a> Centrais de armazenamento de dados</p>
 
 
+
+
+## Formato de JSON de retorno
+<p><a name="_Toc530233485"></a></p>
+<p><a name="_Toc530233486"></a>Tabela - Formato do retorno do JSON com base nas classes de retorno</p>
+<table>
+<tbody>
+<tr>
+<td colspan="4" width="604">
+<p><strong>Formato <em>JSON</em> retornado pelas classes</strong></p>
+</td>
+</tr>
+<tr>
+<td width="142">
+<p>MessageModel</p>
+</td>
+<td width="155">
+<p>MessageListModel</p>
+</td>
+<td width="176">
+<p>MessageNewUserModel</p>
+</td>
+<td width="132">
+<p>MessageAuthModel</p>
+</td>
+</tr>
+<tr>
+<td width="142">
+<p>{</p>
+<p>&ldquo;success&rdquo;: true,</p>
+<p>&ldquo;code&rdquo;: 0,</p>
+<p>&ldquo;description&rdquo; : &ldquo;Descri&ccedil;&atilde;o&rdquo;</p>
+<p>}</p>
+</td>
+<td width="155">
+<p>{</p>
+<p>&ldquo;success&rdquo;: true,</p>
+<p>&ldquo;code&rdquo;: 0,</p>
+<p>&ldquo;description&rdquo; : &ldquo;Descri&ccedil;&atilde;o&rdquo;,</p>
+<p>&ldquo;list&rdquo; : []</p>
+<p>}</p>
+</td>
+<td width="176">
+<p>{</p>
+<p>&ldquo;success&rdquo;: true,</p>
+<p>&ldquo;code&rdquo;: 0,</p>
+<p>&ldquo;description&rdquo; : &ldquo;Descri&ccedil;&atilde;o&rdquo;,</p>
+<p>&ldquo;id&rdquo; : &ldquo;&rdquo;,</p>
+<p>&ldquo;userModel&rdquo; : {}</p>
+<p>}</p>
+</td>
+<td width="132">
+<p>{</p>
+<p>&ldquo;success&rdquo;: true,</p>
+<p>&ldquo;code&rdquo;: 0,</p>
+<p>&ldquo;description&rdquo; : &ldquo;&rdquo;,</p>
+<p>&ldquo;userId&rdquo; : &ldquo;&rdquo;,</p>
+<p>&ldquo;token&rdquo; : &ldquo;&rdquo;,</p>
+<p>&ldquo;userType&rdquo; : &ldquo;&rdquo;,</p>
+<p>&ldquo;username&rdquo; : &ldquo;&rdquo;,</p>
+<p>&ldquo;secretCode&rdquo; : &ldquo;&rdquo;</p>
+<p>}</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## API de usuários
 
 <p><a name="_Toc530233485"></a>Tabela - Recursos da <em>API</em> de usu&aacute;rio</p>
@@ -273,6 +340,1241 @@ Conclui-se que o sistema poderá auxiliar muito no ambiente da saúde, facilitan
 </tbody>
 </table>
 <p><strong>Fonte: Elaborado pelo autor</strong></p>
+
+
+## API de Paciente
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="_Toc530233487"></a>Tabela 33 - Recursos da <em>API</em> de paciente</p>
+<table>
+<tbody>
+<tr>
+<td colspan="4" width="604">
+<p><strong>Recursos disponibilizados pela <em>API</em> de paciente</strong></p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p><strong>Endere&ccedil;o</strong></p>
+</td>
+<td width="66">
+<p><strong>M&eacute;todo</strong></p>
+</td>
+<td width="94">
+<p><strong>Autentica&ccedil;&atilde;o</strong></p>
+</td>
+<td width="217">
+<p><strong>Descri&ccedil;&atilde;o</strong></p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Adiciona um paciente</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient</p>
+</td>
+<td width="66">
+<p>PUT</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Altera um paciente</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/patientData</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Retorna os dados do paciente</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/tagRegister</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Adiciona um equipamento de acesso ao paciente</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/tagUpdate</p>
+</td>
+<td width="66">
+<p>PUT</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Atualiza o equipamento de acesso</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/tagDelete</p>
+</td>
+<td width="66">
+<p>DELETE</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Exclui o equipamento de acesso.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/listPatientTag</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Lista os equipamentos de acesso do usu&aacute;rio</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/tagExist</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Verifica se o equipamento de acesso j&aacute; est&aacute; cadastrado.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/tag</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Obt&eacute;m o paciente a partir do equipamento de acesso.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/diagnosis</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Adiciona um diagn&oacute;stico.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/diagnosis</p>
+</td>
+<td width="66">
+<p>PUT</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Altera um diagn&oacute;stico</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/diagnosis</p>
+</td>
+<td width="66">
+<p>DELETE</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Exclui um diagn&oacute;stico</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/diagnosis</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Obt&eacute;m uma lista de diagn&oacute;sticos de um paciente.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/diagnosis/procedures</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Obt&eacute;m uma lista de procedimentos realizados em um diagn&oacute;stico.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/disease</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Obt&eacute;m uma lista de doen&ccedil;as cadastradas.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/disease</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Adiciona uma doen&ccedil;a ao paciente.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/disease</p>
+</td>
+<td width="66">
+<p>PUT</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Altera uma doen&ccedil;a do paciente.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/disease</p>
+</td>
+<td width="66">
+<p>DELETE</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Exclui uma doen&ccedil;a do paciente</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/patientDisease</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Obt&eacute;m uma lista de doen&ccedil;as do paciente</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/exam</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Adiciona um exame</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/exam</p>
+</td>
+<td width="66">
+<p>PUT</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Altera um exame</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/exam</p>
+</td>
+<td width="66">
+<p>DELETE</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Exclui um exame</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/exam</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Obt&eacute;m um exame</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/exam/attachment</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Adiciona um anexo ao exame</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/exam/attachment</p>
+</td>
+<td width="66">
+<p>DELETE</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Exclui um anexo do exame</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/exam/attachment</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Obt&eacute;m uma lista de anexos de um exame</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/listMedicines</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Lista os medicamentos cadastrados.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/registerMedicine</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Adiciona um medicamento</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/bindMedicine</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Adiciona um medicamento ao paciente</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/unbindMedicine/{idPatient}</p>
+</td>
+<td width="66">
+<p>DELETE</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Desvincula um medicamento do paciente</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/listPatientMedicines</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Obt&eacute;m uma lista de medicamentos do paciente.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/diagnosis/image</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Obt&eacute;m a assinatura do diagn&oacute;stico.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/exam/attachment/document</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Obt&eacute;m o anexo do exame.</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/listPatientHistory</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Obt&eacute;m o hist&oacute;rico m&eacute;dico do paciente</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/patient/listKnownPhysicians</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Lista os m&eacute;dicos conhecidos pelo paciente</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&nbsp;</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Fonte: Elaborado pelo autor</strong></p>
+
+
+## API de Médico
+<p><a name="_Toc530233488"></a>Tabela - Recursos disponibilizados pela <em>API</em> de m&eacute;dico(a)</p>
+<table>
+<tbody>
+<tr>
+<td colspan="4" width="604">
+<p><strong>Recursos disponibilizados pela <em>API</em> de m&eacute;dico(a)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p><strong>Endere&ccedil;o</strong></p>
+</td>
+<td width="106">
+<p><strong>M&eacute;todo</strong></p>
+</td>
+<td width="117">
+<p><strong>Autentica&ccedil;&atilde;o</strong></p>
+</td>
+<td width="131">
+<p><strong>Descri&ccedil;&atilde;o</strong></p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician</p>
+</td>
+<td width="106">
+<p>POST</p>
+</td>
+<td width="117">
+<p>Sim</p>
+</td>
+<td width="131">
+<p>Adiciona um m&eacute;dico(a)</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician</p>
+</td>
+<td width="106">
+<p>PUT</p>
+</td>
+<td width="117">
+<p>Sim</p>
+</td>
+<td width="131">
+<p>Altera um m&eacute;dico(a)</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician</p>
+</td>
+<td width="106">
+<p>GET</p>
+</td>
+<td width="117">
+<p>Sim</p>
+</td>
+<td width="131">
+<p>Retorna os dados do(a) m&eacute;dico(a)</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician/userdata</p>
+</td>
+<td width="106">
+<p>GET</p>
+</td>
+<td width="117">
+<p>Sim</p>
+</td>
+<td width="131">
+<p>Retorna dados do usu&aacute;rio.</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician/listSpecializations</p>
+</td>
+<td width="106">
+<p>GET</p>
+</td>
+<td width="117">
+<p>Sim</p>
+</td>
+<td width="131">
+<p>Lista as especializa&ccedil;&otilde;es do m&eacute;dico</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician/specialization</p>
+</td>
+<td width="106">
+<p>GET</p>
+</td>
+<td width="117">
+<p>Sim</p>
+</td>
+<td width="131">
+<p>Lista todas as especializa&ccedil;&otilde;es de um determinado pa&iacute;s</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician/bindSpecialization</p>
+</td>
+<td width="106">
+<p>POST</p>
+</td>
+<td width="117">
+<p>Sim</p>
+</td>
+<td width="131">
+<p>Adiciona uma especializa&ccedil;&atilde;o ao m&eacute;dico</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician/unbindSpecialization</p>
+</td>
+<td width="106">
+<p>DELETE</p>
+</td>
+<td width="117">
+<p>Sim</p>
+</td>
+<td width="131">
+<p>Remove uma especializa&ccedil;&atilde;o do m&eacute;dico.</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician/listDiagnosisHistory</p>
+</td>
+<td width="106">
+<p>GET</p>
+</td>
+<td width="117">
+<p>Sim</p>
+</td>
+<td width="131">
+<p>Lista o hist&oacute;rico de diagn&oacute;stico do(a) m&eacute;dico(a) em uma institui&ccedil;&atilde;o de sa&uacute;de</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician/listExamHistory</p>
+</td>
+<td width="106">
+<p>GET</p>
+</td>
+<td width="117">
+<p>Sim</p>
+</td>
+<td width="131">
+<p>Lista o hist&oacute;rico de diagn&oacute;stico do(a) m&eacute;dico(a) em uma institui&ccedil;&atilde;o de sa&uacute;de</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician/listPhysicianInNearArea</p>
+</td>
+<td width="106">
+<p>GET</p>
+</td>
+<td width="117">
+<p>Sim</p>
+</td>
+<td width="131">
+<p>Lista os m&eacute;dicos pr&oacute;ximos de uma determinada latitude e longitude</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician/physicianAttendanceRegister</p>
+</td>
+<td width="106">
+<p>POST</p>
+</td>
+<td width="117">
+<p>Sim</p>
+</td>
+<td width="131">
+<p>Registra um atendimento m&eacute;dico em uma institui&ccedil;&atilde;o de sa&uacute;de.</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician/listPhysicianAttendance</p>
+</td>
+<td width="106">
+<p>GET</p>
+</td>
+<td width="117">
+<p>Sim</p>
+</td>
+<td width="131">
+<p>Lista os atendimentos feitos pelo(a) m&eacute;dico(a) em uma institui&ccedil;&atilde;o de sa&uacute;de.</p>
+</td>
+</tr>
+<tr>
+<td width="250">
+<p>/physician/listAttendanceGraph</p>
+</td>
+<td width="106">
+<p>GET</p>
+</td>
+<td width="117">
+<p>N&atilde;o</p>
+</td>
+<td width="131">
+<p>Lista os dados de atendimento do m&eacute;dico no m&ecirc;s corrente.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fonte: Elaborado pelo autor</strong></p>
+
+## API de Enfermeira
+<p><a name="_Toc530233488"></a></p>
+<p><a name="_Toc530233489"></a>Tabela - Recursos disponibilizados pela <em>API</em> de enfermeiro(a)</p>
+<table>
+<tbody>
+<tr>
+<td colspan="4" width="604">
+<p><strong>Recursos disponibilizados pela <em>API</em> de enfermeiro(a)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p><strong>Endere&ccedil;o</strong></p>
+</td>
+<td width="66">
+<p><strong>M&eacute;todo</strong></p>
+</td>
+<td width="94">
+<p><strong>Autentica&ccedil;&atilde;o</strong></p>
+</td>
+<td width="217">
+<p><strong>Descri&ccedil;&atilde;o</strong></p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/nurse</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Adiciona um enfermeiro(a)</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/nurse</p>
+</td>
+<td width="66">
+<p>PUT</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Altera um enfermeiro(a)</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/nurse</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Retorna os dados do(a) enfermeiro(a)</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/nurse/listSpecializations</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Lista as especializa&ccedil;&otilde;es que o(a) enfermeiro(a) possui</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/nurse/bindSpecialization</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Adiciona uma especializa&ccedil;&atilde;o a um(a) enfermeiro(a)</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/nurse/unbindSpecialization</p>
+</td>
+<td width="66">
+<p>DELETE</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Remove uma especializa&ccedil;&atilde;o do(a) enfermeiro(a)</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/nurse/addAttendance</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Adiciona um atendimento</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/nurse/updateAttendance</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Atualiza um atendimento</p>
+</td>
+</tr>
+<tr>
+<td width="226">
+<p>/nurse/listAttendance</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="94">
+<p>Sim</p>
+</td>
+<td width="217">
+<p>Lista os atendimentos pelo(a) enfermeiro(a) em uma institui&ccedil;&atilde;o de sa&uacute;de</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fonte: Elaborado pelo autor</strong></p>
+
+## API de Instituição de Saúde
+<p><a name="_Toc530233490"></a>Tabela - Recursos disponibilizados pela <em>API</em> de institui&ccedil;&atilde;o de sa&uacute;de</p>
+<table>
+<tbody>
+<tr>
+<td colspan="4" width="604">
+<p><strong>Recursos disponibilizados pela <em>API</em> de institui&ccedil;&atilde;o de sa&uacute;de</strong></p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p><strong>Endere&ccedil;o</strong></p>
+</td>
+<td width="66">
+<p><strong>M&eacute;todo</strong></p>
+</td>
+<td width="104">
+<p><strong>Autentica&ccedil;&atilde;o</strong></p>
+</td>
+<td width="189">
+<p><strong>Descri&ccedil;&atilde;o</strong></p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Adiciona uma institui&ccedil;&atilde;o</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution</p>
+</td>
+<td width="66">
+<p>PUT</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Altera uma institui&ccedil;&atilde;o</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Retorna uma lista de institui&ccedil;&otilde;es de sa&uacute;de dado uma posi&ccedil;&atilde;o geogr&aacute;fica.</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution/list</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="104">
+<p>N&atilde;o</p>
+</td>
+<td width="189">
+<p>Lista as institui&ccedil;&otilde;es de sa&uacute;de de modo paginado.</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution</p>
+</td>
+<td width="66">
+<p>DELETE</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Remove uma institui&ccedil;&atilde;o</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution/{idHealthInstitution}</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Obt&eacute;m os dados de uma institui&ccedil;&atilde;o de sa&uacute;de</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution/bind</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Vincula um usu&aacute;rio a uma institui&ccedil;&atilde;o de sa&uacute;de</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution/updatebind</p>
+</td>
+<td width="66">
+<p>PUT</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Atualiza o v&iacute;nculo do usu&aacute;rio com a institui&ccedil;&atilde;o</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution/deletebind</p>
+</td>
+<td width="66">
+<p>DELETE</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Remove o v&iacute;nculo do usu&aacute;rio com a institui&ccedil;&atilde;o</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution/userlist/{idHealthInstitution}</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Retorna os usu&aacute;rios de uma dada institui&ccedil;&atilde;o</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution/image</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Retorna a foto da institui&ccedil;&atilde;o de sa&uacute;de</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution/physician</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Retorna m&eacute;dicos(as) e suas respectivas especializa&ccedil;&otilde;es</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution/nurse</p>
+</td>
+<td width="66">
+<p>GET</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Retorna as enfermeiras de uma institui&ccedil;&atilde;o de sa&uacute;de</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution/waitlist/{idHealthInstitution}</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Adiciona um diagn&oacute;stico a lista de espera do hospital</p>
+</td>
+</tr>
+<tr>
+<td width="245">
+<p>/healthinstitution/updatewaitlist/{idHealthInstitution}</p>
+</td>
+<td width="66">
+<p>POST</p>
+</td>
+<td width="104">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Atualiza a chegada de um paciente na lista do hospital</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fonte: Elaborado pelo autor</strong></p>
+
+## API de Trilha de Auditoria
+<p><a name="_Toc530233491"></a>Tabela - Recursos disponibilizados pela <em>API</em> de trilha de auditoria</p>
+<table>
+<tbody>
+<tr>
+<td colspan="4" width="604">
+<p><strong>Recursos disponibilizados pela <em>API</em> de trilha de auditoria</strong></p>
+</td>
+</tr>
+<tr>
+<td width="198">
+<p><strong>Endere&ccedil;o</strong></p>
+</td>
+<td width="104">
+<p><strong>Opera&ccedil;&atilde;o</strong></p>
+</td>
+<td width="113">
+<p><strong>Autentica&ccedil;&atilde;o</strong></p>
+</td>
+<td width="189">
+<p><strong>Descri&ccedil;&atilde;o</strong></p>
+</td>
+</tr>
+<tr>
+<td width="198">
+<p>/auditTrail/listAuditTrail</p>
+</td>
+<td width="104">
+<p>GET</p>
+</td>
+<td width="113">
+<p>Sim</p>
+</td>
+<td width="189">
+<p>Lista a trilha de auditoria dada uma determinada data</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fonte: Elaborado pelo autor</strong></p>
+<p>&nbsp;</p>
+
+## API de Erro
+<p><a name="_Toc530233491"></a></p>
+<p><a name="_Toc530233492"></a>Tabela - Recursos disponibilizados pela API de erro</p>
+<table>
+<tbody>
+<tr>
+<td colspan="4" width="604">
+<p><strong>Recursos disponibilizados pela API de trilha de erro</strong></p>
+</td>
+</tr>
+<tr>
+<td width="197">
+<p><strong>Endere&ccedil;o</strong></p>
+</td>
+<td width="62">
+<p><strong>M&eacute;todo</strong></p>
+</td>
+<td width="91">
+<p><strong>Autentica&ccedil;&atilde;o</strong></p>
+</td>
+<td width="255">
+<p><strong>Descri&ccedil;&atilde;o</strong></p>
+</td>
+</tr>
+<tr>
+<td width="197">
+<p>/errorlog/list</p>
+</td>
+<td width="62">
+<p>GET</p>
+</td>
+<td width="91">
+<p>N&atilde;o</p>
+</td>
+<td width="255">
+<p>Lista a quantidade de erros em forma de gr&aacute;fico (considera o m&ecirc;s atual).</p>
+</td>
+</tr>
+<tr>
+<td width="197">
+<p>/errorlog/listErrors</p>
+</td>
+<td width="62">
+<p>GET</p>
+</td>
+<td width="91">
+<p>Sim</p>
+</td>
+<td width="255">
+<p>Lista os erros que ocorreram dado uma determinada data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fonte: Elaborado pelo autor</strong></p>
+
 
 ## Licença
 
